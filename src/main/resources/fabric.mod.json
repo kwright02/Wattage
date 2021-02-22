@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "wattage",
+  "version": "${version}",
+
+  "name": "Wattage",
+  "description": "This is a gloabal API for energy in fabric",
+  "authors": [
+    "Kwright02",
+    "Redd56"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.kwright02.wattage.Wattage"
+    ]
+  },
+  "mixins": [
+    "wattage.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
